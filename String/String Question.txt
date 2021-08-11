@@ -1,6 +1,6 @@
 Basic String Programs
 
-Python program to check whether the string is Symmetrical or Palindrome
+Python program to check whether the string is Palindrome
 Reverse words in a given String in Python
 Ways to remove i’th character from string in Python
 Find length of a string in python (4 ways)
