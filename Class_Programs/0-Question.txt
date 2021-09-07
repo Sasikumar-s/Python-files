@@ -1,0 +1,22 @@
+		1. Print Sum of  ''N" Numbers
+		2. Count the Digits
+		3. Sum of Digits
+		4. Reverse
+		5. Adam Number        - 12, 13
+		6. Armstrong Number - 153
+		7. Harshed Number - 12
+		8. Decimal to Binary
+		9. Binary to Decimal
+	    10. Decimal to Octal
+	    11. Octal to Decimal
+	    12. Decimal to Hexadecimal
+	    13. Hexadecimal to Decimal
+	    14. Print Factors
+	    15. Count Factors
+	    16. Sum of Factors
+	    17. Prime Numbers - 3, 5, 7, 11, 13, 17,19
+	    18. Perfect Number - 6
+	    19. Amicable Numbers  - 220 and 284
+	    20. Betrothed Numbers - 48 and 75
+	    21. Fibonocci
+	    22. Patterns - Star and Number
