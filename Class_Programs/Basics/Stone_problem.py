@@ -4,7 +4,8 @@ for i in range(a):
 	ele = int(input())
 	l.append(ele)
 for i in range(a):
-	if l[i]==l[i+1]:
-		l[i]+=1
-		break;
+	if(i!=a):
+		if l[i]==l[i+1]:
+			l[i]+=1
+			break;
 print(l)
