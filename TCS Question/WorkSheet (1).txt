@@ -1,0 +1,211 @@
+1.  A plumber wants to check whether a pipe junction where N incoming pipes and M outgoing pipes are balanced, and, if not, needs to balance the junction by adding an input pipe oran output pipe of a suitable capacity.
+At the junction, there are a set of input pipes and a set of output pipes. Each pipe has a rated capacity and an actual capacity The actual capacity for each pipe is lower than the rated capacity by a constant R, the 'rust factor, which depends on the material of the pipe, and is the same for all the pipes at the junction. For example, if the rated capacity is 65 and is 2 the actual capacity is 63
+A junction is balanced if the sum of the actual capacities of the input pipes is the same as the sum of the actual capacities of the output pipes if it is not balanced, the plumber add one input pipe or one output pipe to balance the junction, and determine the rated capacity of that added pipe A
+Here we have N incoming pipes and M outgoing pipes. The incoming pipes may be of different rated capacities Similarly, the outgoing pipes may also be of different rated capacities
+Find the rated capacity of the pipe required to make the junction balanced if the combined actual capacity of the incoming pipes is more than the combined actual capacity of the outgoing pipes then the plumber will need to add an outgoing pipe Conversely, if the combined actual capacity of the incoming pipes is less than the combined actual capacity of the outgoing pipes then the plumber will need to add an incoming pipe
+if an outgoing pipe is added then denote its rated capacity as a negative number if an incoming pipe is added then denote its rated capacity as a positive arbe
+-Constraints
+1<=N,M,R,<= 1000
+1<=Incoming[i] Outgoing[i]<=10000
+Input
+The input has three lines
+The first line contains three space separated integers N M R denoting the number of incoming pipes, outgoing pipes and rust factor respectively.
+The second line contains N space separated integers denoting the rated capacity of each incoming pipe.
+The third line contains M space separated integers denoting the rated capacity of each outgoing pipe.
+Output
+Print the rated capacity of the pipe required to balance the junction OR print "BALANCED if the junction is already balanced.
+Time Limit
+1
+Explanation
+Example 1
+Input
+3 3 2
+85 75 95
+70 80 45
+Output
+-62
+
+2.  Operations and wants to find all the divisors of P number.
+Note: Divisors should be separated by space and increasing order should be maintained.
+
+Input format
+Input containing a non-negative integer ‘P’ denoting the number
+Violation of input criteria: System should display message as “Wrong Input”
+Output Format
+All divisors should be separated by space and increasing order must be maintained
+Constraints
+1 <= P <= 10^8
+Sample 1
+Input
+10
+Output
+1 2 5 10
+Sample 2
+Input
+18
+Output
+1 2 3 6 9 18
+
+3.  A traveler wants to start his/her journey from Pune to Ahmedabad. Before starting the journey, he/she uses the GPS system to find all the paths to reach from the source to the destination. He/she will use the smallest or the second smallest path to start the journey. Write a logic to find the smallest and the second smallest distance from the list of all distances.
+Input
+1. The first input contains N, the total number of paths from the source to the destination..
+2. The second input contains N sorted integers separated by newline A1, A2... An, representing the distance of all paths.
+Output
+Output contains two numbers separated by a single space character.
+If all paths are equal, then the system should generate a message as "Equal".
+If N is less than 2, then the system should generate a message as "Invalid Input".
+Constraints
+2 <N<= 10
+1 <= A[i]<= 1000
+Example 1:
+INPUT
+4
+100
+400
+300
+250
+Output
+100 250
+Explanation
+Out of the given 4 possible paths, only 100 are the smallest distances to reach the des
+Example 2:
+Input
+1
+200
+Output
+Invalid Input
+
+4.  Alex has been preparing a box for handicraft. The box consists of N pieces of stones with each stone having a certain weight assigned to it. Each stone in the box will carry a different weight. This means no two stones can have the same weight
+Alex wants to do this by making minimal changes in the original weight at least as much as its original weight
+Find the minimum total weight that he can set for the box.
+Note: Stone weight are not in float value.
+Input
+1.First input contains N, the total number of stones in the box
+2.Second Input contains N sorted integers separated by newline A1, A2...An, representing the original weights assigned to each stone violation of input criteria: System should display message as “Wrong Input”.
+Output
+The minimum total stone weights Alex can set the box for
+Constraints
+1<=N<=100000
+1<=A[i]<=100000
+Example 1:
+Input
+3
+2
+2
+4
+Output
+9
+Explanation
+As two stones have the same weight; the max weight for one of them need to be incremented to 3.
+Alex can ste the box with 2+3+4 = 9 weights.
+Example 2:
+Input
+2
+3
+4
+5
+Output
+Wrong Input
+Explanation
+Here N=2, so we need to provide weight of only two stones but, we are providing weight of three stones. So result is “Wrong Input”
+
+5.  Write a program to find the Nth smallest element from a collection.
+Input Format
+The first input contains integer value X, used to define the size of an array.
+The second input contains X unsorted integer numbers separated by newline, i.e. A[i].
+The third input contains the value of N, to find the Nth smallest element from the array.
+Output Format
+The output should be an integer value, the Nth smallest element in the array.
+Constraints
+1 <= X <= 10
+1 <= A[i]<=1000
+1<=N<=X
+Sample1:
+Input:
+5
+10
+20
+40
+30
+60
+3
+Output:
+30
+
+6.  john and Linda are playing a numbers game. John asked Linda to find the number whose square ends with the number itself. The number should also be a positive integer. Write a program to implement the above logic.
+• Input Format
+• Input contains an integer 'N' denoting the number. 
+• Output Format If the number whose square ends with the numbe
+itself, print "Correct Number", otherwise print "Incorrect Number".
+. If the user enters negative integer, the result should
+display "Wrong Input".
+Constraints 
+*1 <= N<=10^8
+Sample 1:
+Input
+5
+Output:
+Correct Number
+Sample 2: 
+Input 
+9
+Output:
+Incorrect Number
+Sample 3:
+Input
+-6
+Output:
+Wrong Input
+
+7.  Generally, in any examination the mark attached to a question is linearly related to the time taken to solve it. Unfortunately, our universe is neither consistent nor fair always: and examination bodies are no exception to this exception. One institution has designed a question paper. Where this linear relationship is thrown out of the window. As a judicious programmer you should help in choosing the questions that would give maximum score to the candidate
+The input to your program consist of the first line with two space separation integers. The first one is the number of questions (n) and the second is the time limit to answer the questions 2 <n<=20
+ The next line has space separated  n unique integers each giving the in divided score for the questions. The third and final line has another set of unique n integers, which gives the time required to solve the questions that the sum of all these durations is more than the time limit specified in first line.
+ Your programme should output the maximum possible score.
+Example-1
+Input
+4 30
+25 10 40 17
+12 20 15 8       
+Expected output
+65
+Example 2
+Input
+3 40
+34 22 16
+10 30 20
+Excepted output
+56
+
+8.  Telephone directory
+Problem Statement
+Given a list of phone numbers determine if it is consistent in the sense that has no number is the prefix of another.Let ‘s say the phone numbers:
+Bheembai 1002345678
+Chakravathy 9876543210
+Police 100
+Ramachandran 9100012345
+In this case ,It’s not possible to call Bheembai, because the exchange would direct call you to the police as soon as you had dialed the first three digits.So this list would not be consistent.
+Input
+The first line of input gives a single integer n, number of phone numbers, 1<=n<=10. Then follows n lines with one uniques phone number on each line.A phone number can at most have ten digits.
+Output
+Please refer to the examples below
+Input 1:
+3
+911
+8976259989
+9112542612
+Expected output
+No, there is a collision with 911
+Input 2:
+5
+113
+1234078901
+1234401234
+1234512345
+9834698765
+Expected output
+Yes, the list of 5 numbers is consistent
+
+
+
+
+
